@@ -12,9 +12,11 @@
   h1 { font-size:28px; margin:0 0 4px; } h1 span { color:var(--accent); }
   h2 { font-size:19px; margin:32px 0 8px; padding-top:16px; border-top:1px solid var(--line); }
   p.meta { color:var(--muted); margin:0 0 24px; }
+  .tw { overflow-x:auto; }
   table { border-collapse:collapse; width:100%; font-size:15px; }
   th, td { text-align:left; vertical-align:top; padding:8px; border-bottom:1px solid var(--line); }
   th { color:var(--muted); font-weight:600; }
+  td small { color:var(--muted); display:block; }
   li { margin:4px 0; }
 </style>
 </head>
@@ -23,50 +25,63 @@
 <h1>Lift<span>One</span> – Informativa sulla privacy</h1>
 <p class="meta">Ultimo aggiornamento: 13 ottobre 2026 · App per telefono Android e orologio Wear OS</p>
 
-<p>LiftOne è un'app per l'allenamento in palestra: schede, serie, carichi, recuperi e battito cardiaco. Questa informativa spiega quali dati usa l'app, perché e dove restano.</p>
+<p>LiftOne è un'applicazione per l'allenamento in palestra: gestione schede, serie, carichi, tempi di recupero e monitoraggio del battito cardiaco. Questa informativa descrive in modo trasparente quali dati vengono trattati, le finalità d'uso e le modalità di conservazione.</p>
 
-<h2>In breve</h2>
+<h2>In sintesi</h2>
 <ul>
-  <li>Tutti i dati restano <strong>sul tuo telefono e sul tuo orologio</strong>. L'app non ha server e non invia dati allo sviluppatore né a terzi.</li>
-  <li>Nessuna pubblicità, nessun tracciamento, nessuna vendita di dati.</li>
-  <li>Non serve un account.</li>
+  <li><strong>Archiviazione esclusivamente locale:</strong> tutti i dati restano memorizzati sul tuo smartphone e sul tuo smartwatch. L'app non possiede server proprietari e non invia dati allo sviluppatore né a terze parti.</li>
+  <li><strong>Nessun tracciamento commerciale:</strong> nessuna pubblicità, nessun tracker di profilazione, nessuna vendita o cessione di dati a terzi.</li>
+  <li><strong>Nessun account:</strong> non è richiesta alcuna registrazione o creazione di account.</li>
 </ul>
 
-<h2>Dati che l'app usa</h2>
-<table>
-  <tr><th>Dato</th><th>Da dove arriva</th><th>A cosa serve</th></tr>
-  <tr><td>Schede, esercizi, serie, ripetizioni, carichi, durata e recuperi</td><td>Inseriti da te</td><td>Eseguire l'allenamento, storico, statistiche, record</td></tr>
-  <tr><td>Profilo: sesso, anno di nascita, altezza, peso, esperienza, obiettivo, giorni di allenamento, articolazioni da proteggere</td><td>Inseriti da te</td><td>Calcolare calorie, frequenza cardiaca massima, zone, carichi e generare la scheda guidata</td></tr>
-  <tr><td>Battito cardiaco durante l'allenamento</td><td>Sensore dell'orologio (Health Services) o fascia cardio Bluetooth scelta da te</td><td>Battito in diretta, fine del recupero a battito, zone e statistiche</td></tr>
-  <tr><td>Peso, % di grasso corporeo, metabolismo basale, altezza</td><td>Health Connect, solo se concedi il permesso (es. misure del Galaxy Watch salvate da Samsung Health)</td><td>Aggiornare il profilo, calcolare calorie e massa magra, grafici del corpo</td></tr>
-</table>
+<h2>Dati trattati e finalità</h2>
+<div class="tw"><table>
+  <tr><th>Dato</th><th>Origine</th><th>Finalità del trattamento</th></tr>
+  <tr><td><strong>Dati di allenamento</strong><small>Schede, esercizi, serie, ripetizioni, carichi, durata, recuperi</small></td><td>Inseriti dall'utente</td><td>Esecuzione e gestione dell'allenamento, storico delle sessioni, statistiche di carico e record personali.</td></tr>
+  <tr><td><strong>Profilo utente</strong><small>Sesso, anno di nascita, altezza, peso, esperienza, obiettivo, giorni di allenamento, note articolari</small></td><td>Inseriti dall'utente</td><td>Stima delle calorie, frequenza cardiaca massima teorica, zone cardio, progressione dei carichi e generazione della scheda guidata.</td></tr>
+  <tr><td><strong>Frequenza cardiaca</strong><small>Rilevata durante l'allenamento</small></td><td>Sensore dell'orologio (Wear OS Health Services) o fascia cardio Bluetooth</td><td>Battito in diretta, recupero dinamico basato sul battito, tempo nelle zone cardio e statistiche della sessione.</td></tr>
+  <tr><td><strong>Metriche corporee</strong><small>Peso, % di grasso corporeo, metabolismo basale, altezza</small></td><td>Google Health Connect (solo previo esplicito consenso)</td><td>Aggiornamento dei parametri del profilo, stima della massa magra e grafici della composizione corporea.</td></tr>
+</table></div>
 
-<h2>Health Connect</h2>
-<p>L'app legge da Health Connect solo: peso, grasso corporeo, altezza e metabolismo basale (e lo storico di questi dati, se lo autorizzi). Non scrive nulla in Health Connect. Puoi revocare i permessi in qualsiasi momento da Impostazioni → Health Connect. I dati letti sono usati solo per le funzioni descritte sopra, non vengono trasferiti a terzi né usati per pubblicità o per decisioni su credito, assicurazioni o lavoro.</p>
-
-<h2>Scambio tra telefono e orologio</h2>
-<p>Telefono e orologio si scambiano la scheda del giorno, i risultati delle serie e il battito in diretta tramite il collegamento Bluetooth/Wear OS di Google (Data Layer), direttamente tra i tuoi dispositivi.</p>
-
-<h2>Permessi richiesti</h2>
+<h2>Integrazione Google Health Connect</h2>
+<p>L'app richiede l'accesso a Google Health Connect <strong>in sola lettura</strong>, limitatamente ai seguenti parametri: peso corporeo, percentuale di massa grassa, altezza e metabolismo basale (incluso lo storico, se autorizzato).</p>
 <ul>
-  <li><strong>Sensori del corpo / frequenza cardiaca</strong> (orologio): leggere il battito.</li>
-  <li><strong>Servizio in primo piano</strong> (orologio): continuare a leggere il battito durante l'allenamento a schermo spento.</li>
-  <li><strong>Dispositivi nelle vicinanze / Bluetooth</strong> (telefono): collegare una fascia cardio, solo se lo scegli.</li>
-  <li><strong>Notifiche</strong> e <strong>vibrazione</strong>: avvisi di fine recupero e soglia del battito.</li>
-  <li><strong>Health Connect</strong> (telefono): lettura di peso, grasso, altezza, metabolismo.</li>
+  <li>LiftOne non scrive né modifica dati all'interno di Health Connect.</li>
+  <li>I permessi possono essere revocati in qualsiasi momento da: Impostazioni → App → Health Connect → Autorizzazioni.</li>
+  <li><strong>Conformità ai requisiti di Uso limitato (Limited Use):</strong> l'utilizzo e il trasferimento a qualsiasi altra app delle informazioni ricevute dalle API di Health Connect saranno conformi alle Norme sulle autorizzazioni di Health Connect di Google, compresi i requisiti per l'Uso limitato. I dati sanitari non vengono mai utilizzati per finalità pubblicitarie, di marketing o di profilazione commerciale.</li>
 </ul>
 
-<h2>Conservazione e cancellazione</h2>
-<p>I dati restano sul dispositivo finché non li cancelli. Puoi azzerare le statistiche dall'app (Statistiche → menu → Azzera statistiche) oppure eliminare tutti i dati disinstallando l'app o cancellandone i dati dalle impostazioni di Android.</p>
+<h2>Comunicazione tra smartphone e smartwatch (Wear OS)</h2>
+<p>Lo scambio di informazioni tra il telefono e l'orologio (scheda del giorno, serie completate e battito in diretta) avviene tramite i servizi Google di Wear OS (Data Layer API), con trasmissione crittografata, direttamente tra i due dispositivi dell'utente via Bluetooth o Wi-Fi. Quando i dispositivi non sono vicini, Wear OS può instradare la sincronizzazione attraverso i servizi di Google. Lo sviluppatore non ha accesso a questi dati in nessun caso.</p>
 
-<h2>Minori</h2>
-<p>L'app è destinata a persone maggiorenni.</p>
+<h2>Permessi richiesti dal sistema operativo</h2>
+<ul>
+  <li><strong>Sensori del corpo / Frequenza cardiaca</strong> (Wear OS): necessario per rilevare il battito cardiaco durante l'attività.</li>
+  <li><strong>Servizio in primo piano</strong> (Wear OS): necessario per mantenere attivi il monitoraggio del battito e il timer di recupero anche quando lo schermo dell'orologio entra in modalità ambient o si spegne.</li>
+  <li><strong>Dispositivi nelle vicinanze / Bluetooth</strong> (Android): necessario esclusivamente per associare e leggere una fascia cardio esterna, solo se abilitata dall'utente.</li>
+  <li><strong>Notifiche e vibrazione:</strong> avviso di fine recupero e avvisi sulle soglie cardio.</li>
+  <li><strong>Health Connect:</strong> lettura autorizzata dei parametri di composizione corporea.</li>
+</ul>
 
-<h2>Avvertenza</h2>
-<p>LiftOne non è un dispositivo medico. Le stime (calorie, zone, carichi) sono indicative e non sostituiscono il parere di un medico o di un professionista.</p>
+<h2>Conservazione, cancellazione e diritti dell'utente</h2>
+<p>Tutti i dati rimangono archiviati nella memoria locale dell'applicazione fino alla loro esplicita eliminazione da parte dell'utente:</p>
+<ul>
+  <li>È possibile azzerare la cronologia direttamente nell'app (Statistiche → Menu → Azzera statistiche).</li>
+  <li>La rimozione completa e immediata di ogni dato si ottiene disinstallando l'applicazione oppure con l'opzione di sistema <em>Cancella dati</em> nelle impostazioni di Android relative a LiftOne.</li>
+</ul>
 
-<h2>Contatti</h2>
-<p>Per domande sulla privacy: <a href="mailto:jcreator2000@gmail.com">jcreator2000@gmail.com</a></p>
+<h2>Minori e avvertenze mediche</h2>
+<ul>
+  <li><strong>Minori:</strong> l'applicazione è destinata a un pubblico maggiorenne (18+ anni).</li>
+  <li><strong>Esclusione di responsabilità medica:</strong> LiftOne non è un dispositivo medico e non fornisce diagnosi, indicazioni terapeutiche o trattamenti sanitari. Le stime fornite (calorie, zone cardiache, recuperi e carichi consigliati) hanno valore puramente indicativo e non sostituiscono in alcun modo il parere di un medico o di un professionista sanitario qualificato.</li>
+</ul>
+
+<h2>Titolare del trattamento e contatti</h2>
+<p>Per domande relative alla presente informativa o alla gestione dei dati locali dell'app:</p>
+<ul>
+  <li><strong>Sviluppatore:</strong> LiftOne</li>
+  <li><strong>Email di supporto:</strong> <a href="mailto:jcreator2000@gmail.com">jcreator2000@gmail.com</a></li>
+</ul>
 </main>
 </body>
 </html>
